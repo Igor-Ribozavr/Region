@@ -4,7 +4,7 @@ export const receiveData = () => {
   return async (dispatch) => {
     try {
       const response = await fetch(
-        'https://salty-shelf-51947.herokuapp.com/api/region'
+        'https://salty-shelf-51947.herokuapp.com/api/region?type=1'
       );
       const result = await response.json();
       dispatch({
@@ -17,26 +17,14 @@ export const receiveData = () => {
   };
 };
 
-export const addRegion = (title) => {
-  return async (dispatch) => {
-    try {
-      const response = await fetch(`https://api/list`, {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json',
-        },
-        body: JSON.stringify({
-          title: title,
-        }),
-      });
+export const addRegion = (parametrFilter) => {
+  return (dispatch) => {
+    console.log(parametrFilter);
 
-      const result = await response.json();
-
-      dispatch({
-        type: ADD_REGION,
-        payload: result,
-      });
-    } catch (error) {}
+    dispatch({
+      type: ADD_REGION,
+      payload: parametrFilter,
+    });
   };
 };
 

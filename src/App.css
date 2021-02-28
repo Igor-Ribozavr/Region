@@ -41,12 +41,12 @@
   line-height: 3em;
   background-color: rgb(214, 188, 157);
 }
-.district-container{
+.district-container {
   min-height: 70px;
   width: 800px;
   border-style: solid;
   border-radius: 8px;
-  border-width: 0px 0px 1.3px 0px;
+  border-width: 0px;
   border-color: rgba(135, 135, 135, 0.2);
   margin: 10px 80px 10px 10px;
   text-align: center;
@@ -66,7 +66,7 @@
   background-color: rgb(194, 224, 180);
 }
 
-.country{
+.country {
   min-height: 70px;
   width: 720px;
   border-style: solid;
@@ -77,4 +77,47 @@
   line-height: 3em;
   margin: 10px 0px 10px 0px;
   background-color: rgb(104, 212, 185);
+}
+
+.input-checkbox-city {
+  width: 345px;
+  height: 34px;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+  font-size: 18px;
+  background: rgb(236, 232, 232);
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-input-checkbox-district,.container-input-checkbox-district {
+  margin-bottom: 20px;
+  width: 345px;
+  height: 34px;
+}
+
+
+.input-checkbox-district {
+  width: 345px;
+  height: 34px;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+  font-size: 18px;
+  background: rgb(236, 232, 232);
+}
+
+.input-activity:focus {
+  outline-color: #8ecee2;
+  font-size: 18px;
+}
+.input-text{
+  width: 342px;
+  height: 31px;
+  border: 1px solid #c9cacc;
+  border-radius: 4px;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
 }
